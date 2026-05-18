@@ -143,7 +143,7 @@ async def process_loop(client: discord.Client = None, full_scrape = False):
 
     # FLAGS
     JUSTGAMES = False
-    SENDUPDATES = True
+    SENDUPDATES = False
 
     # Step 1: Update Games
     _updates, games_new, removed_games, removed_objectives = await update_games(full_scrape)
